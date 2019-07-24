@@ -29,7 +29,7 @@ function createWindow () {
 
     const pos = tray.getBounds()
 
-    mainWindow.setPosition(pos.x, pos.y);
+    mainWindow.setPosition(pos.x - 170, pos.y);
   })
   mainWindow.on('hide', () => {
     tray.setHighlightMode('never')
