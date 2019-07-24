@@ -10,7 +10,6 @@ function createWindow () {
     height: 500,
     skipTaskbar: true,
     frame: false,
-    resizable: false,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
