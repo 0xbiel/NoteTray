@@ -1,3 +1,6 @@
-body {
+textarea {
     font-family: sans-serif;
+    resize: none;
+    outline: none;
+    border: none;
 }
