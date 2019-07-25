@@ -1,6 +1,14 @@
 textarea {
     font-family: sans-serif;
     resize: none;
-    outline: none;
-    border: none;
+    /* outline: none;
+    border: none; */
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline;
 }
