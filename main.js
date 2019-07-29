@@ -6,8 +6,8 @@ let tray = null;
 
 function createWindow () {
   mainWindow = new BrowserWindow({
-    width: 400,
-    height: 500,
+    width: 420,
+    height: 520,
     skipTaskbar: true,
     frame: false,
     webPreferences: {
@@ -19,7 +19,7 @@ function createWindow () {
 
   mainWindow.hide();
 
-  tray = new Tray("./assets/icon@2x_white.png");
+  tray = new Tray("./assets/icon@2x.png");
 
   tray.on('click', () => {
     mainWindow.isVisible() ? mainWindow.hide() : mainWindow.show()
@@ -29,7 +29,7 @@ function createWindow () {
 
     const pos = tray.getBounds()
 
-    mainWindow.setPosition(pos.x - 195, pos.y + 30);
+    mainWindow.setPosition(pos.x - 215, pos.y + 30);
   })
   mainWindow.on('hide', () => {
     tray.setHighlightMode('never')
