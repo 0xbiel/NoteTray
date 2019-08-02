@@ -1,3 +1,16 @@
-// This file is required by the index.html file and will
-// be executed in the renderer process for that window.
-// All of the Node.js APIs are available in this process.
+function dark_toggle() {
+    var el1 = document.getElementById("dark-reader");
+    if(el1.disabled) {
+        el1.disabled = false;
+        localStorage.setItem("darkreader", "enabled");
+    } else {
+        el1.disabled = true;
+        localStorage.setItem("darkreader", "disabled");
+    }
+}
+
+if (localStorage.getItem("darkreader") == "enabled") {
+    document.getElementById("dark-reader").disabled = false;
+   } else {
+    document.getElementById("dark-reader").disabled = true;
+   }
