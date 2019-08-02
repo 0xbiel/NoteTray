@@ -8,32 +8,22 @@ textarea {
     border-bottom: 1px solid #fafafa;
 }
 
-ul {
-    list-style-type: none;
-    text-align: center;
+div {
+    align-items: center;
 }
 
-ul li {
-    display: inline;
+div a {
+    float: right;
     padding: 5px;
 }
 
-ul li button {
-    -webkit-border-radius: 5;
-    -moz-border-radius: 5;
-    border-radius: 5px;
-    border: solid #3498db 2px;
-    font-family: Arial;
-    color: #ffffff;
-    font-size: 14px;
-    background: #3498db;
-    padding: 10px 10px 10px 10px;
-    text-decoration: none;
+div p {
+    float: left;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #c4c4c4
 }
 
-ul li button:hover {
-    background: #3cb0fd;
-    border: solid #3cb0fd 2px;
-    text-decoration: none;
-    cursor: pointer;
+a i {
+    color: black;
 }
