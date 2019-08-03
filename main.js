@@ -12,12 +12,11 @@ function createWindow () {
     frame: false,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
-    }
+    },
+    show: false
   })
 
   mainWindow.setMenu(null)
-
-  mainWindow.hide();
 
   tray = new Tray("./assets/icon@2x.png");
 

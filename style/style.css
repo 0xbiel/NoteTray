@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
+body {
+    background-color: #EEEEEE;
+}
+
 textarea {
     font-family: sans-serif;
     resize: none;
     outline: none;
     border: none;
-    border-bottom: 1px solid #fafafa;
+    border-bottom: 1px solid #f3f3f3;
+    background-color: #EEEEEE;
 }
 
 div {
@@ -26,7 +31,7 @@ div p {
     float: left;
     font-family: sans-serif;
     font-size: 12px;
-    color: #c4c4c4
+    color: #cccccc
 }
 
 a i {
