@@ -4,4 +4,4 @@ Copyright © 2019 Gabriel Polastrini
 
 Create notes from your system tray.
 
-![preview](./preview.gif)
+![preview](./notetray_preview.gif)
