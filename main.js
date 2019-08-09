@@ -18,7 +18,7 @@ function createWindow () {
 
   mainWindow.setMenu(null)
 
-  tray = new Tray("./assets/icon@2x.png");
+  tray = new Tray("./assets/tray_icon@2x.png");
 
   tray.on('click', () => {
     mainWindow.isVisible() ? mainWindow.hide() : mainWindow.show()
