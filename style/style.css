@@ -24,7 +24,7 @@ div a {
 }
 
 div a i:hover {
-    color: blueviolet;
+    color: dodgerblue;
 }
 
 div p {
@@ -36,4 +36,13 @@ div p {
 
 a i {
     color: black;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: dodgerblue;
+    border-radius: 6px;
 }
