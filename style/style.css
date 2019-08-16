@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
+html {
+    scroll-behavior: auto !important;
+}
+
 body {
     background-color: #EEEEEE;
 }
@@ -9,25 +13,25 @@ textarea {
     resize: none;
     outline: none;
     border: none;
-    border-bottom: 1px solid #f3f3f3;
     background-color: #EEEEEE;
+    height: 85vh;
 }
 
-div {
+footer {
     align-items: center;
 }
 
-div a {
+footer a {
     float: right;
     padding: 5px;
     cursor: pointer;
 }
 
-div a i:hover {
+footer a i:hover {
     color: dodgerblue;
 }
 
-div p {
+footer p {
     float: left;
     font-family: sans-serif;
     font-size: 12px;
