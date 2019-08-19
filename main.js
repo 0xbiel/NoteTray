@@ -23,9 +23,8 @@ function createWindow () {
   tray = new Tray("./assets/tray_icon@2x.png");
 
   const contextMenu = Menu.buildFromTemplate([
-    { label: 'Change Theme', type: 'normal' },
-    { label: 'About', type: 'normal' },
-    { label: 'Quit', type: 'normal' }
+    { label: 'About', type: 'normal', role:'about' },
+    { label: 'Quit', type: 'normal', role: 'close' }
   ])
 
   tray.setContextMenu(contextMenu);

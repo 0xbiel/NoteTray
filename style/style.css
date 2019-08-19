@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
+
+@media (prefers-color-scheme: dark) {
+    body {
+      background-color: #101010 !important;
+    }
+    textarea {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
