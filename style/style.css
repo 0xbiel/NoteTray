@@ -70,6 +70,7 @@ ul li a i:hover {
 
 ::-webkit-scrollbar {
     visibility: hidden;
+    width: 0px;
 }
 
 ::-webkit-scrollbar-thumb {
