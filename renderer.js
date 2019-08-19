@@ -11,6 +11,8 @@ function dark_toggle() {
 
 if (localStorage.getItem("darkreader") == "enabled") {
     document.getElementById("dark-reader").disabled = false;
-   } else {
+   }
+
+else {
     document.getElementById("dark-reader").disabled = true;
    }

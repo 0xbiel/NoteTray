@@ -1,4 +1,4 @@
-const {app, BrowserWindow, Tray} = require('electron')
+const {app, BrowserWindow, Tray, Menu} = require('electron')
 const path = require('path')
 
 let mainWindow
@@ -19,8 +19,17 @@ function createWindow () {
   mainWindow.setMenu(null)
   mainWindow.isResizable(false)
   mainWindow.setResizable(false)
+  mainWindow.openDevTools();
 
   tray = new Tray("./assets/tray_icon@2x.png");
+
+  const contextMenu = Menu.buildFromTemplate([
+    { label: 'Change Theme', type: 'normal' },
+    { label: 'About', type: 'normal' },
+    { label: 'Quit', type: 'normal' }
+  ])
+
+  tray.setContextMenu(contextMenu);
 
   tray.on('click', () => {
     mainWindow.isVisible() ? mainWindow.hide() : mainWindow.show()
@@ -36,7 +45,7 @@ function createWindow () {
     tray.setHighlightMode('never')
   })
 
-  mainWindow.loadFile('index.html')
+  mainWindow.loadURL('file://' + __dirname + '/index.html');
 
   mainWindow.on('closed', function () {
     mainWindow = null
