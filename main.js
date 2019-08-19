@@ -19,7 +19,6 @@ function createWindow () {
   mainWindow.setMenu(null)
   mainWindow.isResizable(false)
   mainWindow.setResizable(false)
-  mainWindow.openDevTools();
 
   tray = new Tray("./assets/tray_icon@2x.png");
 
@@ -38,8 +37,21 @@ function createWindow () {
     tray.setHighlightMode('always')
 
     const pos = tray.getBounds()
+    let y = 0
+    let x = pos.x - 200
 
-    mainWindow.setPosition(pos.x - 215, pos.y + 30);
+    if (process.platform !== 'darwin') {
+      const size = mainWindow.getSize();
+      const windowWidth = size[0];
+      const windowHeight = size[1];
+      if (pos.y === 0) { // windows taskbar top
+        y = pos.height;
+      } else { // windows taskbar bottom
+        y = pos.y - windowHeight;
+      }
+    }
+
+    mainWindow.setPosition(x, y);
   })
   mainWindow.on('hide', () => {
     tray.setHighlightMode('never')
