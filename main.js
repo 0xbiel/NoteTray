@@ -17,6 +17,8 @@ function createWindow () {
   })
 
   mainWindow.setMenu(null)
+  mainWindow.isResizable(false)
+  mainWindow.setResizable(false)
 
   tray = new Tray("./assets/tray_icon@2x.png");
 

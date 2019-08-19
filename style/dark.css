@@ -1,7 +1,7 @@
 html,
 body,
 :not([style*="background-color:"]) {
-    background-color: #101010 !important;
+    background-color: #171717 !important;
 }
 html,
 body,
@@ -23,17 +23,17 @@ input:not([style*="background-color:"]),
 textarea:not([style*="background-color:"]),
 button:not([style*="background-color:"]),
 [role="button"] {
-    background-color: rgb(15, 15, 15) !important;
+    background-color: #000000 !important;
 }
 input:not([style*="background-color:"]):hover,
 textarea:not([style*="background-color:"]):hover,
 button:not([style*="background-color:"]):hover,
 [role="button"]:hover {
-    background-color: rgb(15, 15, 15) !important;
+    background-color: #000000 !important;
 }
 input:not([style*="background-color:"]):active, input:not([style*="background-color:"]):focus,
 textarea:not([style*="background-color:"]):active, textarea:not([style*="background-color:"]):focus,
 button:not([style*="background-color:"]):active, button:not([style*="background-color:"]):focus,
 [role="button"]:active, [role="button"]:focus {
-    background-color: rgb(15, 15, 15) !important;
+    background-color: #000000 !important;
 }
