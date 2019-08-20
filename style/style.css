@@ -9,6 +9,16 @@
         background-color: #000000 !important;
         color: #ffffff !important;
     }
+    ::-webkit-scrollbar {
+        width: 2px !important;
+    
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color: white !important;
+        width: 3px !important;
+    }
+    
 }
 
 * {
@@ -47,14 +57,11 @@ textarea {
 }
 
 ::-webkit-scrollbar {
-    visibility: hidden;
-    width: 0px;
+    width: 2px;
+
 }
 
 ::-webkit-scrollbar-thumb {
-    visibility: hidden;
-}
-
-::-webkit-scrollbar-track {
-    visibility: hidden;
+    background-color: black;
+    border-radius: 3px;
 }
