@@ -10,18 +10,23 @@ const mb = menubar({
 
 mb.on('ready', () => {
     mb.tray.setImage("./assets/tray_icon@2x.png")
-})
 
-
-/*const ret = globalShortcut.register('CommandOrControl+N', function () {
-        if (mb.window.isVisible()) {
-	    mb.window.hide()
-	} 
-	else {
-	    mb.window.show()
+    const ret = globalShortcut.register('CommandOrControl+Alt+N', () => {
+	if (mb.window.isVisible()) {
+	    mb.window.hide()	
 	}
+	else {
+	    mb.window.show()    
+	}
+    })
+
+    if (!ret) {
+	console.log('shortcut reg failed')	
+    }
+
+    mb.showWindow()
 })
 
-if (!ret) {
-    console.log('registration failed')
-}*/
+mb.on('show', function show () {
+      mb.window.webContents.send('show')
+})
