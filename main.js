@@ -13,7 +13,7 @@ mb.on('ready', () => {
 
     const ret = globalShortcut.register('CommandOrControl+Alt+N', () => {
 	if (mb.window.isVisible()) {
-	    mb.window.hide()	
+	    mb.window.hide()
 	}
 	else {
 	    mb.window.show()    
