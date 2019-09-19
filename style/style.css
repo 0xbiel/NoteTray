@@ -1,3 +1,30 @@
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #171717 !important;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    textarea {
+        margin: 10px;
+        padding: 10px;
+        justify-content: center;
+        font-family: sans-serif;
+        resize: none;
+        outline: none;
+        border: none;
+        background-color: #000000 !important;
+        color: #ffffff;
+        grid-column: 1/3;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: white !important;
+        border-radius: 3px;
+    }
+}
+
 body {
     background-color: #EFF0F1;
     margin: 0;
