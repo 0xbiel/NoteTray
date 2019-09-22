@@ -4,7 +4,11 @@ Copyright © 2019 Gabriel Polastrini
 
 Create notes from your system tray.
 
-![preview](./preview.png)
+### Dark Mode
+![Dark Mode](./dark.png)
+
+### Light Mode
+![Light Mode](./light.png)
 
 ## Usage
 
