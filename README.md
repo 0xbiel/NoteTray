@@ -23,4 +23,4 @@ Extract the ```notetray-win32-x64.zip``` file and execute the ```notetray.exe```
 
 ## Credits
 
-Splashify was created by [Gabriel Polastrini](https://gabrielpolastrini.com). Released under the GPL v3 license.
+NoteTray was created by [Gabriel Polastrini](https://gabrielpolastrini.com). Released under the GPL v3 license.
