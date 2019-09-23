@@ -18,7 +18,7 @@
     "electron": "^6.0.10"
   },
   "dependencies": {
-    "bulma": "^0.7.5",
+    "electron-packager": "^14.0.6",
     "menubar": "^6.0.7"
   }
 }

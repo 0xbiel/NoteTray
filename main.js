@@ -3,13 +3,13 @@ const path = require('path')
 const { menubar } = require('menubar')
 
 const mb = menubar({
-    icon: path.join(__dirname, './assets/note.png'),
+    icon: path.join(__dirname, '/./assets/icon.png'),
     resizable: false,
     preloadWindow: true
 });
 
 mb.on('ready', () => {
-    mb.tray.setImage("./assets/notebw@2x.png")
+    mb.tray.setImage(path.join(__dirname, '/./assets/notebw@2x.png'))
 
     const ret = globalShortcut.register('CommandOrControl+Alt+N', () => {
 	if (mb.window.isVisible()) {
