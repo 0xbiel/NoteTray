@@ -9,7 +9,7 @@ const mb = menubar({
 });
 
 mb.on('ready', () => {
-    mb.tray.setImage(path.join(__dirname, '/./assets/notebw@2x.png'))
+    mb.tray.setImage(path.join(__dirname, '/./assets/notebw.png'))
 
     const ret = globalShortcut.register('CommandOrControl+Alt+N', () => {
 	if (mb.window.isVisible()) {
