@@ -9,19 +9,19 @@ const mb = menubar({
 });
 
 mb.on('ready', () => {
-    mb.tray.setImage(path.join(__dirname, '/./assets/notebw.png'))
+    mb.tray.setImage(path.join(__dirname, '/./assets/uIcon.png'))
 
     const ret = globalShortcut.register('CommandOrControl+Alt+N', () => {
 	if (mb.window.isVisible()) {
 	    mb.window.hide()
 	}
 	else {
-	    mb.window.show()    
+	    mb.window.show()
 	}
     })
 
     if (!ret) {
-	console.log('shortcut reg failed')	
+	console.log('shortcut reg failed')
     }
 
     mb.showWindow()
