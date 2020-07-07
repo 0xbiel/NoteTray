@@ -15,7 +15,7 @@
   "author": "Gabriel Polastrini",
   "license": "GPL-3.0",
   "devDependencies": {
-    "electron": "^6.0.10"
+    "electron": "^7.2.4"
   },
   "dependencies": {
     "electron-packager": "^14.0.6",
